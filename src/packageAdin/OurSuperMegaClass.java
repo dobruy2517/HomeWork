@@ -6,7 +6,7 @@ package packageAdin;
 public class OurSuperMegaClass {
 
     public static void main(String[] args) {
-        System.out.println("PISH-PASH");
+        System.out.println("PISH-PISH");
         System.out.println("OLOLOLO");
         int a = 5;
         int b=16;
