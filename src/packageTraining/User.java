@@ -17,6 +17,11 @@ public class User {
         this.password = password;
     }
 
+    public User(User user) {
+        this.username = user.username;
+        this.password = user.password;
+    }
+
     public String getUsername() {
         return username;
     }
@@ -33,9 +38,14 @@ public class User {
         this.username = username;
     }
 
-    User newUsername = new User();
-    newUsername.username;
+    public static void main(String[] args) {
 
-    User newUser=new User("TestUsername", "TestPassword");
+        User newUser = new User();
+        System.out.println(newUser.username);
+
+        User newUser1 = new User("TestUsername", "TestPassword");
+        System.out.println(newUser1);
+        User newUser2 = new User(newUser1);
+        System.out.println(newUser2);
     }
 }
