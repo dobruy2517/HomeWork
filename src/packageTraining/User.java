@@ -1,11 +1,12 @@
 package packageTraining;
 
-import static javafx.scene.input.KeyCode.T;
 
-/**
- * Created by AID on 24.09.2016.
- */
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+
 public class User {
+
     private String username;
     private String password;
 
@@ -38,14 +39,13 @@ public class User {
         this.username = username;
     }
 
-    public static void main(String[] args) {
-
+    @Test
+    public void Test() {
         User newUser = new User();
         System.out.println(newUser.username);
-
         User newUser1 = new User("TestUsername", "TestPassword");
-        System.out.println(newUser1);
+        Assert.assertEquals(newUser1.getUsername(), "TestUsername");
         User newUser2 = new User(newUser1);
-        System.out.println(newUser2);
+        Assert.assertEquals(newUser2.password, newUser1.password);
     }
 }
