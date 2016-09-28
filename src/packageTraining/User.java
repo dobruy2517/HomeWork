@@ -42,7 +42,6 @@ public class User {
     @Test
     public void Test() {
         User newUser = new User();
-        System.out.println(newUser.username);
         User newUser1 = new User("TestUsername", "TestPassword");
         Assert.assertEquals(newUser1.getUsername(), "TestUsername");
         User newUser2 = new User(newUser1);
