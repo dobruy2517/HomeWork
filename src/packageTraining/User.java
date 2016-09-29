@@ -1,9 +1,8 @@
 package packageTraining;
 
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
+import org.junit.Assert;
+import org.junit.Test;
 
 public class User {
 
@@ -11,6 +10,7 @@ public class User {
     private String password;
 
     public User() {
+        this.username = "TestUsername";
     }
 
     public User(String username, String password) {
