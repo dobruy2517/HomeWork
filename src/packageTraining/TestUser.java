@@ -4,23 +4,24 @@ package packageTraining;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class User {
+public class TestUser {
 
     private String username;
     private String password;
 
-    public User() {
+    public TestUser() {
         this.username = "TestUsername";
+        this.password= "TestPassword";
     }
 
-    public User(String username, String password) {
+    public TestUser(String username, String password) {
         this.username = username;
         this.password = password;
     }
 
-    public User(User user) {
-        this.username = user.username;
-        this.password = user.password;
+    public TestUser(TestUser testUser) {
+        this.username = testUser.username;
+        this.password = testUser.password;
     }
 
     public String getUsername() {
@@ -39,12 +40,5 @@ public class User {
         this.username = username;
     }
 
-    @Test
-    public void Test() {
-        User newUser = new User();
-        User newUser1 = new User("TestUsername", "TestPassword");
-        Assert.assertEquals(newUser1.getUsername(), "TestUsername");
-        User newUser2 = new User(newUser1);
-        Assert.assertEquals(newUser2.password, newUser1.password);
-    }
+
 }
