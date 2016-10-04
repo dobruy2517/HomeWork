@@ -15,4 +15,8 @@ public class RunTest {
         TestUser newTestUser2 = new TestUser(newTestUser1);
         Assert.assertEquals(newTestUser2.getPassword(), newTestUser1.getPassword());
     }
+
+    public void jhks() {
+        return;
+    }
 }

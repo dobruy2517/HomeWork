@@ -1,4 +1,4 @@
-//package packageDlinueSlova;
+package CodeForces;//package packageDlinueSlova;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;

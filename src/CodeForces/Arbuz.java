@@ -1,4 +1,4 @@
-package packageArbuz;
+package CodeForces;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-//package packageTheater;
+package CodeForces;//package packageTheater;
 
 import java.util.Scanner;
 

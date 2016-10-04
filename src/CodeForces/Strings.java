@@ -1,4 +1,4 @@
-package CodeForces;
+//package CodeForces;
 
 
 import java.util.Scanner;
@@ -8,7 +8,6 @@ public class Strings {
         Scanner sc = new Scanner(System.in);
         String strNaVhode = sc.next();
         String strNaVuhode = "";
-        String tochka = "";
         for (int i = 0; i < strNaVhode.length(); i++) {
             if (!isGlasna(strNaVhode.charAt(i))) {
                 strNaVuhode += "." + strNaVhode.toLowerCase().charAt(i);
