@@ -1,10 +1,8 @@
-package packageTheater;
+//package packageTheater;
 
 import java.util.Scanner;
 
-/**
- * Created by konstruktor on 28.09.2016.
- */
+
 public class Theater {
     public static void main(String[] args) {
         Scanner vvod = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package packageDlinueSlova;
+package CodeForces;//package packageDlinueSlova;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
@@ -12,11 +12,11 @@ public class DlinueSlova {
             String str = sc.next();
             int length = str.length();
             if (length > 10) {
-                for (int j = 0; j <= length; j++) {
                     char c = str.charAt(0);
-                    char d = str.charAt(length);
-                    System.out.println(c + length - 2 + d);
-                }
+                    char d = str.charAt(length-1);
+                    System.out.print(c);
+                    System.out.print(length - 2);
+                    System.out.println(d);
             } else {
                 System.out.println(str);
             }
