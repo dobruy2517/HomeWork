@@ -1,4 +1,6 @@
-package packageTraining;
+package packageTraining.packageVtornik_04_10;
+
+import packageTraining.packageVtornik_04_10.Animal;
 
 public class Cat extends Animal {
 

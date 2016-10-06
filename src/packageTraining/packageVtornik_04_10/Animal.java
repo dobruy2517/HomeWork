@@ -1,4 +1,4 @@
-package packageTraining;
+package packageTraining.packageVtornik_04_10;
 
 
 public abstract class Animal extends Object implements Moveble {

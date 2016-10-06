@@ -1,9 +1,7 @@
-package packageTraining;
+package packageTraining.packageDz_04_10;
 
-/**
- * Created by AID on 29.09.2016.
- */
-public class Vuhodnue {
+
+public class Vuhodnue extends Moveble implements InorodnoeTelo {
     private String name;
     private boolean isAlcohol;
     private int volumeAlcohol;
@@ -31,5 +29,14 @@ public class Vuhodnue {
     public String getName(){
         return name;
     }
+    @Override
+    public void drink(){
+        System.out.println("Go to the night CLUB!!!");
+    }
+    @Override
+    public void move(){
+        System.out.println("Can't to move");
+    }
+
 
 }
